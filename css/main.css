@@ -1,0 +1,332 @@
+@font-face{
+/*****LOGO FONT*****/
+  font-family: 'BendyStraw';
+  src: url('../fonts/BendyStraw.ttf') format('truetype');
+
+/*****SPECIALTY WELCOME FONTS*****/
+  font-family: 'Lemon Tuesday';
+  src: url('../fonts/lemon-tuesday.otf') format('opentype');
+
+  font-family: 'bitwise';
+  src: url('../fonts/bitwise.ttf') format('truetype');
+
+  font-family: 'The Girl Next Door', cursive;
+
+/*****MAIN FONTS*****/
+  /**didn't use** font-family: 'Lora', serif; **/
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/*****BASE STYLES*****/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/*****HEADER*****/
+
+header {
+  height: 60px;
+  background-color: #1e212a;
+}
+
+header h1{
+    font-family: 'BendyStraw';
+    padding:0 0 25px 25px;
+    color: white;
+    float: left;
+}
+
+nav {
+  float:right;
+  padding: 15px 25px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+}
+
+/*****WELCOME*****/
+
+#welcome {
+  height: 350px;
+  background-image: url('../img/hero-background.png');
+  background-size:cover;
+
+}
+
+#welcome h2 {
+  padding-left: 50px;
+  clear: both;
+}
+
+.creativeFont {
+  font-family: 'Lemon Tuesday';
+  font-size: 250%;
+  line-height: 200%;
+  padding-left: 15px;
+}
+
+.techFont {
+  font-family: 'bitwise';
+  color: #fa0075;
+  font-size: 225%;
+  padding-left: 150px;
+}
+
+.growFont {
+  color: white;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 250%;
+  padding-left: 150px;
+}
+
+/*****PORTFOLIO*****/
+#portfolio .full-width {
+  height: 1320px;
+  background-color: #1e212a;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  color: #fa0075;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#portfolio h3 {
+  margin: 0px;
+}
+#portfolio h4 {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 115%;
+  line-height: 125%;
+}
+/*****PORTFOLIO GRID PROPERTIES*****/
+#portfolio .grid {
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 50px auto auto;
+  grid-gap: 50px;
+}
+
+/*****FOR GRID HEADER******/
+#portfolio .span2 {
+  grid-column-end: span 2;
+}
+
+#portfolio .align {
+  text-align:right;
+}
+/*****/
+
+#portfolio p {
+  font-size: 115%;
+  line-height: 125%;
+}
+
+
+/*****ABOUT*****/
+
+#about .full-width {
+  height: 300px;
+  background-image: url('../img/about.png');
+  background-size: cover;
+  padding: 50px;
+  clear:both;
+}
+
+#about .half-width {
+  width: 550px;
+  float:left;
+}
+
+#about h3 {
+  margin: 0px;
+  font-weight: normal;
+  color: black;
+}
+
+#about p {
+  font-size: 115%;
+  line-height: 125%;
+  color: black;
+  clear: both;
+}
+
+#about img {
+  border: 1px solid white;
+  clear:both;
+  float: right;
+}
+
+/*****CONTACT*****/
+#contact .full-width {
+  height: 320px;
+  background-color: #1e212a;
+  padding-left: 25px;
+  padding-right: 25px;
+  clear:both;
+}
+
+/*****CONTACT GRID PROPERTIES*****/
+#contact .grid {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 10px;
+  grid-template-rows: 125px auto;
+}
+
+/*****FOR GRID HEADER******/
+#contact .span3 {
+  grid-column-end: span 3;
+}
+/*****/
+
+#contact h2 {
+  text-align: center;
+  color: #fa0075;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#contact ul {
+  padding: 30px 0px 0px 0px;
+}
+
+#contact ul li {
+  display: inline-block;
+  padding-left: 60px;
+}
+
+#contact p {
+  font-size: 115%;
+  line-height: 50%;
+  text-align: center;
+  color: white;
+}
+
+#contact a:link{
+  text-align: center;
+  text-decoration:none;
+  color: white;
+}
+
+
+/*****MANGROVE*****/
+
+/*****FOOTER*****/
+footer {
+  background-color: #1e212a;
+}
+footer p{
+  margin: 0px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top:20px;
+}
+
+/*****ADDITIONAL PAGES STYLING*****/
+
+/*****PORTFOLIO-ADDITIONAL*****/
+#portfolio-additional .full-width {
+  background-color: #1e212a;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#portfolio-additional h2 {
+  color: #fa0075;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+/*****PORTFOLIO CREATE & BLOG GRID PROPERTIES*****/
+#portfolio-additional .grid-create {
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 50px auto auto auto auto auto auto;
+  grid-gap: 20px;
+  clear:both;
+}
+
+#portfolio-additional .grid-blog {
+  display: grid;
+  grid-template-columns: 25px 550px;
+  grid-template-rows: 50px auto;
+  grid-row-gap: 40px;
+  grid-column-gap: 10px;
+  clear:both;
+}
+
+/*****FOR GRID HEADER******/
+#portfolio-additional .span2 {
+  grid-column-end: span 2;
+}
+
+#portfolio-additional .align {
+  text-align:left;
+}
+/*****/
+
+#portfolio-additional p {
+  font-size: 115%;
+  line-height: 125%;
+}
+
+#portfolio-additional .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+/*****ADDITIONAL TECH*****/
+/*****adapted https://www.w3schools.com/howto/howto_css_team.asp for tech page portfolio*****/
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 300px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(250, 0, 117, 1) ;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear:both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-style: italic;
+}
+
+
+/*****ADDITIONAL BLOG*****/
